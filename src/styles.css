@@ -1,11 +1,49 @@
+body {
+  background-color: white;
+}
 .container {
   text-align: center;
   max-width: 500px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 15px auto;
+}
+select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
 }
 h1 {
   color: purple;
   text-align: center;
 }
+h2 {
+  margin-bottom: -5px;
+  padding-bottom: -5px;
+}
+.date {
+  font-size: 15px;
+  margin-top: -5px;
+  padding-top: -5px;
+  opacity: 50%;
+}
+.time {
+  font-size: 30px;
+}
+.row {
+  padding: 10px;
+  border-bottom: dashed;
+  border-color: black;
+  margin-top: 10px;
+}
+.row:last-child {
+  border: none;
+}
 footer {
   text-align: center;
+  color: black;
+  font-size: 10px;
 }
