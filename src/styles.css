@@ -23,6 +23,14 @@ body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/822/original/shanghai.jpg?1666492964);
   color: black;
 }
+.dakar {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/827/original/sengalbeach.jpg?1666497056);
+  color: black;
+}
+.nairobi {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/828/original/grasslandnairobi.jpg?1666497282);
+  color: black;
+}
 .mylocation {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/823/original/watersunset.jpg?1666493306);
   color: black;

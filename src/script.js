@@ -49,6 +49,8 @@ function updateCity(event) {
     body.classList.remove("chicago");
     body.classList.remove("london");
     body.classList.remove("shanghai");
+    body.classList.remove("dakar");
+    body.classList.remove("nairobi");
   }
   if (cityTimeZone === "Europe/Athens") {
     body.classList.add("athens");
@@ -56,6 +58,8 @@ function updateCity(event) {
     body.classList.remove("chicago");
     body.classList.remove("london");
     body.classList.remove("shanghai");
+    body.classList.remove("dakar");
+    body.classList.remove("nairobi");
   }
   if (cityTimeZone === "America/Chicago") {
     body.classList.add("chicago");
@@ -63,6 +67,8 @@ function updateCity(event) {
     body.classList.remove("mylocation");
     body.classList.remove("london");
     body.classList.remove("shanghai");
+    body.classList.remove("dakar");
+    body.classList.remove("nairobi");
   }
   if (cityTimeZone === "Europe/London") {
     body.classList.add("london");
@@ -70,6 +76,8 @@ function updateCity(event) {
     body.classList.remove("chicago");
     body.classList.remove("mylocation");
     body.classList.remove("shanghai");
+    body.classList.remove("dakar");
+    body.classList.remove("nairobi");
   }
   if (cityTimeZone === "Asia/Shanghai") {
     body.classList.add("shanghai");
@@ -77,7 +85,28 @@ function updateCity(event) {
     body.classList.remove("chicago");
     body.classList.remove("london");
     body.classList.remove("mylocation");
+    body.classList.remove("dakar");
+    body.classList.remove("nairobi");
   }
+  if (cityTimeZone === "Africa/Dakar") {
+    body.classList.add("dakar");
+    body.classList.remove("shanghai");
+    body.classList.remove("athens");
+    body.classList.remove("chicago");
+    body.classList.remove("london");
+    body.classList.remove("mylocation");
+    body.classList.remove("nairobi");
+  }
+  if (cityTimeZone === "Africa/Nairobi") {
+    body.classList.add("nairobi");
+    body.classList.remove("shanghai");
+    body.classList.remove("athens");
+    body.classList.remove("chicago");
+    body.classList.remove("london");
+    body.classList.remove("mylocation");
+    body.classList.remove("dakar");
+  }
+
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
