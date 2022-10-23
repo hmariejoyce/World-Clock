@@ -4,6 +4,30 @@ body {
   background-position: center;
   height: 100vh;
 }
+
+.athens {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/819/original/athens.jpg?1666492179);
+  color: black;
+}
+
+.chicago {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/820/original/chicago.jpg?1666492432);
+  color: black;
+}
+.london {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/821/original/london.jpg?1666492645);
+  color: black;
+}
+
+.shanghai {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/822/original/shanghai.jpg?1666492964);
+  color: black;
+}
+.mylocation {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/823/original/watersunset.jpg?1666493306);
+  color: black;
+}
+
 .container {
   text-align: center;
   max-width: 500px;
@@ -51,6 +75,7 @@ small {
 .row:last-child {
   border: none;
 }
+
 footer {
   text-align: center;
   color: black;

@@ -41,8 +41,42 @@ function updateTime() {
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  let body = document.querySelector("body");
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
+    body.classList.add("mylocation");
+    body.classList.remove("athens");
+    body.classList.remove("chicago");
+    body.classList.remove("london");
+    body.classList.remove("shanghai");
+  }
+  if (cityTimeZone === "Europe/Athens") {
+    body.classList.add("athens");
+    body.classList.remove("mylocation");
+    body.classList.remove("chicago");
+    body.classList.remove("london");
+    body.classList.remove("shanghai");
+  }
+  if (cityTimeZone === "America/Chicago") {
+    body.classList.add("chicago");
+    body.classList.remove("athens");
+    body.classList.remove("mylocation");
+    body.classList.remove("london");
+    body.classList.remove("shanghai");
+  }
+  if (cityTimeZone === "Europe/London") {
+    body.classList.add("london");
+    body.classList.remove("athens");
+    body.classList.remove("chicago");
+    body.classList.remove("mylocation");
+    body.classList.remove("shanghai");
+  }
+  if (cityTimeZone === "Asia/Shanghai") {
+    body.classList.add("shanghai");
+    body.classList.remove("athens");
+    body.classList.remove("chicago");
+    body.classList.remove("london");
+    body.classList.remove("mylocation");
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
@@ -59,7 +93,8 @@ function updateCity(event) {
               <small>${cityTime.format("A")}</small>
             </div>
           </div>
-        </div>`;
+        </div>
+        <a href="/">- Go to Main -</a>`;
 }
 
 updateTime();
